@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +15,5 @@ namespace BestBuyBestPractices
         public int CategoryID { get; set;}
         public int OnSale { get; set;}
         public string StockLevel { get; set;}
-
     }
 }

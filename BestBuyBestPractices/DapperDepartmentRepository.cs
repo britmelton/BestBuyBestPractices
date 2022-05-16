@@ -1,17 +1,13 @@
 ﻿using Dapper;
-using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BestBuyBestPractices
 {
     public class DapperDepartmentRepository : IDepartmentRepository
     {
         private readonly IDbConnection _connection; //field
-        //encapsulation - information hiding. 
+        //encapsulation 
 
         //Constructor
         public DapperDepartmentRepository(IDbConnection connection)
@@ -29,6 +25,12 @@ namespace BestBuyBestPractices
         {
             _connection.Execute("INSERT INTO DEPARTMENTS (Name) VALUES (@departmentName);",
             new { departmentName = newDepartmentName });
+        }
+        
+        public void UpdateDepartment(int id, string newName)
+        {
+            _connection.Execute("UPDATE departments SET Name = @newName WHERE DepartmentID = @id", 
+                new { newName = newName, id = id });
         }
     }
 }
