@@ -3,12 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BestBuyBestPractices", "BestBuyBestPractices\BestBuyBestPractices.csproj", "{E99F35FF-8859-4797-B3F6-BB8967128826}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BestBuyBestPractices", "BestBuyBestPractices\BestBuyBestPractices.csproj", "{E99F35FF-8859-4797-B3F6-BB8967128826}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2699C64B-9F9B-4767-A9A6-F624536D1D08}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{D429CA3D-8EB8-4CA3-91EE-8A46C5BCD6EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +22,10 @@ Global
 		{E99F35FF-8859-4797-B3F6-BB8967128826}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E99F35FF-8859-4797-B3F6-BB8967128826}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E99F35FF-8859-4797-B3F6-BB8967128826}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D429CA3D-8EB8-4CA3-91EE-8A46C5BCD6EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D429CA3D-8EB8-4CA3-91EE-8A46C5BCD6EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D429CA3D-8EB8-4CA3-91EE-8A46C5BCD6EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D429CA3D-8EB8-4CA3-91EE-8A46C5BCD6EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

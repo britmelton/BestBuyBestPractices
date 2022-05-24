@@ -1,13 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Infrastructure_Dapper</RootNamespace>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Content Include="bin\Debug\net5.0\appsettings.json" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.123" />

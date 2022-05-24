@@ -1,10 +1,6 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Domain.Repositories;
 using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace BestBuyBestPractices
 {
@@ -21,7 +17,7 @@ namespace BestBuyBestPractices
 
             var repo = new DapperDepartmentRepository(conn);
 
-            Console.WriteLine($"Would you like to update a department? yes or no");
+            Console.WriteLine($"Would you like to update a department name? yes or no");
 
             if (Console.ReadLine().ToUpper() == "YES")
             {
@@ -53,6 +49,7 @@ namespace BestBuyBestPractices
 
             var departments = repo.GetAllDepartments();
 
+            Console.WriteLine("Departments:");
             foreach (var item in departments)
             {
                 Console.WriteLine($"{item.DepartmentID} {item.Name}");

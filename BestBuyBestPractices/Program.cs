@@ -1,10 +1,4 @@
-﻿using System;
-using System.Data;
-using System.IO;
-using MySql.Data.MySqlClient;
-using Microsoft.Extensions.Configuration;
-
-namespace BestBuyBestPractices
+﻿namespace BestBuyBestPractices
 {
     internal class Program
     {
@@ -17,11 +11,9 @@ namespace BestBuyBestPractices
             /*In order to use Dapper you need to declare an IDbConnection object and intitialize it to a SqlConnection to connect the database.*/
             #endregion
 
-            Product.ListProducts();
+            Department.ListDepartments();
 
-            Product.DeleteProduct();
-
-            Product.ListProducts();
+            Department.DepartmentUpdate();
         }
 
     }
